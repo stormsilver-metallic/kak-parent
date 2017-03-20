@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>家計簿アプリ ca.K 収入・支出の記録</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../webjars/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../resources/kak-mockup-web/1.0/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../resources/kak-mockup-web/1.0/css/dashboard.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../resources/kak-mockup-web/1.0/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">家計簿アプリ ca.K</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="#">Home</a></li>
+            <li class="active dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">実績 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">収入・支出の記録</a></li>
+                <li><a href="#">帳簿</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">予算 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">予算作成</a></li>
+                <li><a href="#">スケジュール</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">分析 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">今月の状況</a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">logout</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 sidebar">
+          <dl>
+            <dt>先月の収入</dt>
+            <dd class="text-right lead">¥580,000円</dd>
+            <dt>今月の使った金額</dt>
+            <dd class="text-right lead">¥410,000円</dd>
+            <dt>残金</dt>
+            <dd class="text-right lead">¥170,00円</dd>
+          </dl>
+          <div class="form-group">
+            <input type="date" class="form-control" placeholder="Search">
+          </div>
+        </div>
+
+        <div class="col-sm-9 col-sm-offset-3 main"> 
+          <div class="page-header">
+            <h3>帳簿</h3>
+          </div>
+
+          <button type="button" class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-plus"></i></button>
+          
+          <table class="table table-stripped table-hover table-condensed">
+            <tr>
+              <th>日付</th>
+              <th>店舗</th>
+              <th>金額</th>
+              <th>カテゴリー</th>
+              <th>削除／詳細</th>
+            </tr>
+            <tr>
+              <td>2016-05-02</td>
+              <td>イトーヨーカ堂</td>
+              <td>▲¥23,124円</td>
+              <td>食料品</td>
+              <td>
+                <button type="button" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-trash"></i></button>
+                <button type="button" class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-pencil"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>2016-05-02</td>
+              <td>イトーヨーカ堂</td>
+              <td>▲¥23,124円</td>
+              <td>食料品</td>
+              <td>
+                <button type="button" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-trash"></i></button>
+                <button type="button" class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-pencil"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>2016-05-02</td>
+              <td>イトーヨーカ堂</td>
+              <td>▲¥23,124円</td>
+              <td>食料品</td>
+              <td>
+                <button type="button" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-trash"></i></button>
+                <button type="button" class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-pencil"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>2016-05-02</td>
+              <td>イトーヨーカ堂</td>
+              <td>▲¥23,124円</td>
+              <td>食料品</td>
+              <td>
+                <button type="button" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-trash"></i></button>
+                <button type="button" class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-pencil"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>2016-05-02</td>
+              <td>イトーヨーカ堂</td>
+              <td>▲¥23,124円</td>
+              <td>食料品</td>
+              <td>
+                <button type="button" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-trash"></i></button>
+                <button type="button" class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-pencil"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>2016-05-02</td>
+              <td>イトーヨーカ堂</td>
+              <td>▲¥23,124円</td>
+              <td>食料品</td>
+              <td>
+                <button type="button" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-trash"></i></button>
+                <button type="button" class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-pencil"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>2016-05-02</td>
+              <td>イトーヨーカ堂</td>
+              <td>▲¥23,124円</td>
+              <td>食料品</td>
+              <td>
+                <button type="button" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-trash"></i></button>
+                <button type="button" class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-pencil"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>2016-05-02</td>
+              <td>イトーヨーカ堂</td>
+              <td>▲¥23,124円</td>
+              <td>食料品</td>
+              <td>
+                <button type="button" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-trash"></i></button>
+                <button type="button" class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-pencil"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>2016-05-02</td>
+              <td>イトーヨーカ堂</td>
+              <td>▲¥23,124円</td>
+              <td>食料品</td>
+              <td>
+                <button type="button" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-trash"></i></button>
+                <button type="button" class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-pencil"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>2016-05-02</td>
+              <td>イトーヨーカ堂</td>
+              <td>▲¥23,124円</td>
+              <td>食料品</td>
+              <td>
+                <button type="button" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-trash"></i></button>
+                <button type="button" class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-pencil"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>2016-05-02</td>
+              <td>イトーヨーカ堂</td>
+              <td>▲¥23,124円</td>
+              <td>食料品</td>
+              <td>
+                <button type="button" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-trash"></i></button>
+                <button type="button" class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-pencil"></i></button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../resources/kak-mockup-web/1.0/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
